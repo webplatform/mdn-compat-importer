@@ -1,0 +1,56 @@
+{
+  "name": "mdn-compat-importer",
+  "version": "0.0.1",
+  "description": "Reads MDN compatibility info and converts it from HTML to JSON.",
+  "keywords": [
+    "webplatform",
+    "mdn",
+    "compatibility",
+    "import"
+  ],
+  "author": "David Kirstein <frozenice@frozenice.de>",
+  "contributors": [],
+  "license": "MIT",
+  "homepage": "https://github.com/webplatform/mdn-compat-importer",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/webplatform/mdn-compat-importer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/webplatform/mdn-compat-importer/issues"
+  },
+  "main": "index.js",
+  "files": [
+    "LICENSE",
+    "README.md",
+    "CHANGELOG.md",
+    "index.js",
+    "lib",
+    "bin"
+  ],
+  "scripts": {
+    "prepublish": "grunt build",
+    "test": "grunt test"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-contrib-jshint": "~0.8.0",
+    "grunt-mocha-test": "~0.8.1",
+    "grunt-text-replace": "~0.3.10",
+    "mocha-multi": "~0.3.0",
+    "mocha-slow-reporter": "0.0.0",
+    "mocha-lcov-reporter": "0.0.1",
+    "chai": "~1.8.1",
+    "blanket": "~1.1.6",
+    "rimraf": "~2.2.5",
+    "mocha-unfunk-reporter": "~0.4.0"
+  },
+  "peerDependencies": {},
+  "dependencies": {
+    "superagent": "~0.16.0",
+    "q": "~1.0.0",
+    "mkdirp": "~0.3.5",
+    "lodash-node": "~2.4.1",
+    "cheerio": "~0.13.1"
+  }
+}
