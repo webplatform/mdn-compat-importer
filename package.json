@@ -36,14 +36,12 @@
     "grunt": "~0.4.2",
     "grunt-contrib-jshint": "~0.8.0",
     "grunt-mocha-test": "~0.8.1",
-    "grunt-text-replace": "~0.3.10",
     "mocha-multi": "~0.3.0",
     "mocha-slow-reporter": "0.0.0",
-    "mocha-lcov-reporter": "0.0.1",
     "chai": "~1.8.1",
-    "blanket": "~1.1.6",
     "rimraf": "~2.2.5",
-    "mocha-unfunk-reporter": "~0.4.0"
+    "mocha-unfunk-reporter": "~0.4.0",
+    "istanbul": "~0.2.3"
   },
   "peerDependencies": {},
   "dependencies": {

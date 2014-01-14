@@ -1,6 +1,7 @@
 var fs = require('fs');
 var cp = require('child_process');
 var rimraf = require('rimraf');
+var istanbul = require('istanbul');
 
 var LINT = true;
 var COVERALLS = false;
@@ -52,27 +53,13 @@ module.exports = function(grunt) {
           ui: 'bdd',
           require: ['test/init.js']
         },
-        src: ['test/**/*.js', '!test/init.js']
-      }
-    },
-    replace: {
-      results: {
-        src: ['test-results/coverage.html', 'test-results/lcov.txt'],
-        overwrite: true,
-        replacements: [
-          {
-            // make coverage paths relative
-            from: process.cwd().replace(/\\/g, '/') + '/',
-            to: ''
-          }
-        ]
+        src: ['test/**/*.js', '!test/init.js', '!test/_fixtures/**']
       }
     }
   });
 
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-mocha-test');
-  grunt.loadNpmTasks('grunt-text-replace');
 
   grunt.registerTask('test', 'Build, generate coverage, run tests.', function() {
     if (fs.existsSync('test-results')) {
@@ -80,7 +67,7 @@ module.exports = function(grunt) {
     }
     fs.mkdirSync('test-results');
 
-    process.env.multi = 'spec=- mocha-slow-reporter=test-results/slow.txt html-cov=test-results/coverage.html mocha-lcov-reporter=test-results/lcov.txt';
+    process.env.multi = 'spec=- mocha-slow-reporter=test-results/slow.txt';
     grunt.config.set('mochaTest.lib.options.reporter', 'mocha-multi');
 
     // needed so that mocha-multi doesn't kill the process
@@ -88,23 +75,38 @@ module.exports = function(grunt) {
     program.name = 'mocha';
     program.exit = false;
 
+    grunt.task.run(['build', 'mochaTest', 'covreport']);
     if (process.env.TRAVIS) {
+      grunt.config.set('mochaTest.lib.options.reporter', 'mocha-unfunk-reporter');
       if (COVERALLS) {
-        process.env.multi = 'mocha-unfunk-reporter=- mocha-lcov-reporter=test-results/lcov.txt';
-        grunt.task.run(['build', 'mochaTest', 'replace:results', 'coveralls']);
-      } else {
-        grunt.config.set('mochaTest.lib.options.reporter', 'mocha-unfunk-reporter');
-        grunt.task.run(['build', 'mochaTest']);
+        grunt.task.run(['coveralls']);
       }
-    } else {
-      grunt.task.run(['build', 'mochaTest', 'replace:results']);
     }
+  });
+
+  grunt.registerTask('covreport', 'Generate coverage reports.', function() {
+    var collector = new istanbul.Collector();
+    collector.add(global.__coverage__);
+    var reports = [
+      istanbul.Report.create('lcovonly', { dir: 'test-results' })
+    ];
+    if (process.env.TRAVIS) {
+      // show per-file coverage stats in the Travis console
+      reports.push(istanbul.Report.create('text'));
+    } else {
+      // produce HTML when not running under Travis
+      reports.push(istanbul.Report.create('html', { dir: 'test-results' }));
+    }
+    reports.push(istanbul.Report.create('text-summary'));
+    reports.forEach(function(report) {
+      report.writeReport(collector, true);
+    });
   });
 
   grunt.registerTask('coveralls', 'Push to Coveralls.', function() {
     this.requires('mochaTest');
     var done = this.async();
-    cp.exec('cat ./test-results/lcov.txt | ./node_modules/.bin/coveralls', { cwd: './' }, function(err, stdout, stderr) {
+    cp.exec('cat ./test-results/lcov.info | ./node_modules/.bin/coveralls', { cwd: './' }, function(err, stdout, stderr) {
       grunt.log.writeln(stdout + stderr);
       done(err);
     });
