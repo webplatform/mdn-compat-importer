@@ -11,6 +11,7 @@ Reads MDN compatibility info and converts it from HTML to JSON.
 
   - Clone this repository (you should fork first, if you want to contribute)
   - Install [NodeJS](http://nodejs.org/), if you haven't already
+  - Run `npm install -g grunt-cli` (you might need sudo/admin for this)
   - Run `npm install` from the directory to install the dependencies
   - Run `node index.js` to run the tool
 
