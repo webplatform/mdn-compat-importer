@@ -48,10 +48,16 @@ Q.
     return pagesWithCompatTables;
 
     // use these to test specific pages, comment the return directly above this line
-    //return _.pick(pagesWithCompatTables, function(value, key) { return key === "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/header"; }); // simple table
-    //return _.pick(pagesWithCompatTables, function(value, key) { return key === "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video"; }); // table with several rows
-    //return _.pick(pagesWithCompatTables, function(value, key) { return key === "https://developer.mozilla.org/en-US/docs/Web/CSS/@keyframes"; }); // table with prefixes
-    //return _.pick(pagesWithCompatTables, function(value, key) { return key === "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Input"; }); // very complex table
+    //return _.pick(pagesWithCompatTables, function(value, key) { return key === 'https://developer.mozilla.org/en-US/docs/Web/HTML/Element/header'; }); // simple table
+    //return _.pick(pagesWithCompatTables, function(value, key) { return key === 'https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video'; }); // table with several rows
+    //return _.pick(pagesWithCompatTables, function(value, key) { return key === 'https://developer.mozilla.org/en-US/docs/Web/CSS/@keyframes'; }); // table with prefixes
+    //return _.pick(pagesWithCompatTables, function(value, key) { return key === 'https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Input'; }); // very complex table
+    //
+    // if you want to grab several pages, use this:
+    //return _.pick(pagesWithCompatTables,
+    //  'https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video',
+    //  'https://developer.mozilla.org/en-US/docs/Web/CSS/@keyframes'
+    //);
   }).
 
   // convert the compat tables to JSON
