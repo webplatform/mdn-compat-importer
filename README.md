@@ -1,7 +1,7 @@
+# Mozilla Developer Network Compatibility data importer
 
 [![Dependency Status](https://david-dm.org/webplatform/mdn-compat-importer.png)](https://david-dm.org/webplatform/mdn-compat-importer)
 
-# mdn-compat-importer
 
 Reads MDN compatibility info and converts it from HTML to JSON.
 
