@@ -43,19 +43,30 @@ Once every Vagrant/Salt stack dependencies are installed, you can boot the works
 
 1. Run vagrant up
 
+
     vagrant up
 
   NOTE: It is OK, if it throws an error "Minion failed to authenticate". This is due to the fact that it is masterless but doesn't make us unable to use
 2. Login to the new machine
 
+
     vagrant ssh
 
 3. Run again salt as root
+
 
     sudo salt-call --local state.highstate
 
 4. You are done. Start working
 
-    cd /vagrant
 
+    cd /vagrant
+    
+5. To adjust environment, look at `vagrant/salt-roots`. To apply changes, run:
+
+
+    salt state.highstate
+    
+  NOTE: This shortcut is possible due to the `~/.bash_alias` that shortens `sudo salt-call --local -l debug` that we would need in a production environment.
+  
 See README.md for further details.
