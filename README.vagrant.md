@@ -20,9 +20,11 @@ run the same dependencies.
     vagrant gem install vagrant-salt
   ```
 4. Boot up the VM
-```bash
+
+  ```bash
     vagrant up
-```
+  ```
+
 First bootup is longer because it installs everything, see in file `saltstack/roots/salt/top.sls` this is where Salt stack starts working from.
 
 
@@ -37,26 +39,31 @@ First bootup is longer because it installs everything, see in file `saltstack/ro
 Once every Vagrant/Salt stack dependencies are installed, you can boot the workspace.
 
 1. Run vagrant up
-```bash
+
+  ```bash
     vagrant up
-```
+  ```
   NOTE: It is OK, if it throws an error "Minion failed to authenticate". This is due to the fact that it is masterless but doesn't make us unable to use
 2. Login to the new machine
-```bash
+
+  ```bash
     vagrant ssh
-```
+  ```
 3. Run again salt as root
-```bash
+
+  ```bash
     sudo salt-call --local state.highstate
-```
+  ```
 4. You are done. Start working
-```bash
+
+  ```bash
     cd /vagrant
-```
+  ```
 5. To adjust environment, look at `vagrant/salt-roots`. To apply changes, run:
-    ```bash
+
+  ```bash
     salt state.highstate
-    ```
+  ```
   NOTE: This shortcut is possible due to the `~/.bash_alias` that shortens `sudo salt-call --local -l debug` that we would need in a production environment.
   
 See README.md for further details.
