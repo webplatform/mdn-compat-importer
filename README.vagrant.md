@@ -16,9 +16,9 @@ run the same dependencies.
 2. installed
 3. Make sure you have **salty vagrant** as a Vagrant plugin, or run
 
-```bash
+  ```bash
     vagrant gem install vagrant-salt
-```
+  ```
 4. Boot up the VM
 ```bash
     vagrant up
