@@ -15,6 +15,7 @@ run the same dependencies.
 1. Have [Vagrant](http://www.vagrantup.com/) and [VirtualBox](https://www.virtualbox.org/) 
 2. installed
 3. Make sure you have **salty vagrant** as a Vagrant plugin, or run
+
 ```bash
     vagrant gem install vagrant-salt
 ```
