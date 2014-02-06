@@ -7,7 +7,6 @@
 (3.6) [1]  :  normal
 (537.33)  :  prefix
 (recognized but no UI)  :  normal
-(Removed in Opera 15)  :  normal
 (see )  :  normal
 -moz-border-radius-bottomleft  :  normal
 -moz-border-radius-bottomright  :  normal
@@ -73,10 +72,6 @@ Daily test builds only  :  normal
 Daily test builds only  :  normal
 dom.indexedDB.experimental pref  :  normal
 dom.indexedDB.experimental pref  :  normal
-Effect removed in 15.0  :  normal
-Effect removed in 15.0  :  normal
-Effect removed in 23.0 (23.0)  :  normal
-Effect removed in 23.0 (23.0)  :  normal
 Experimental, and without specific UI, since 16.0 (16): behind the pref dom.experimental_forms  :  normal
 Experimental, and without specific UI, since 20.0 (20): behind the pref dom.experimental_forms  :  normal
 Filters for the following audio file extensions: .aac, .aif, .flac, .iff, .m4a, .m4b, .mid, .midi, .mp3, .mpa, .mpc, .oga, .ogg, .ra, .ram, .snd, .wav, .wma  :  normal
@@ -108,57 +103,10 @@ No more supported in Chrome 24 and later.  :  normal
 old webkit syntax  :  normal
 old webkit syntax for iOS 4.2 and older  :  normal
 Older versions of Safari (up to at least 5.1.7) incorrectly interpret clip: auto as clip: rect(auto, auto, auto, auto).  :  normal
-Partial (see below)  :  normal
-Partial (see below)  :  normal
-Partial (see below)  :  normal
-Partial (see below)  :  normal
-Partial (see below)  :  normal
-Partial (see below)  :  normal
-Partial (see below)  :  normal
-Partial (see below)  :  normal
-Partial (see below)  :  normal
-Partial (see below)  :  normal
-Partial (see below)  :  normal
-Partial (see below)  :  normal
-Partial (see below)  :  normal
-Partial (see below)  :  normal
-Partial (see below)  :  normal
-Partial (see below)  :  normal
-Partial (see below)  :  normal
-Partial (see below)  :  normal
-Partial (see below)  :  normal
-Partial (see below)  :  normal
-Partial (see below)  :  normal
-Partial (see below)  :  normal
-Partial (see below)  :  normal
-Partial since 11.0, full since 16.0  :  normal
-Partial since 11.0, full since 16.0  :  normal
 printable keys: 29.0 (29.0)  :  normal
 printable keys: 29.0 (29.0)  :  normal
 Reintroduced in 16.0  :  normal
-Removed from 24.0 (24)  :  normal
-Removed in 15.0  :  normal
-Removed in 15.0  :  normal
-Removed in 15.0  :  normal
-Removed in 22.0 (22.0)  :  normal
-Removed in 22.0 (22.0)  :  normal
-Removed in 23.0 (23.0)  :  normal
-Removed in 23.0 (23.0)  :  normal
-Removed in 23.0 (23.0)  :  normal
-Removed in 23.0 (23.0)  :  normal
-Removed in 23.0 (23.0)  :  normal
-Removed in 23.0 (23.0)  :  normal
-Removed in 26.0 (26.0)  :  normal
-Removed in 26.0 (26.0)  :  normal
 See  :  normal
-see note  :  normal
-see note  :  normal
-see note  :  normal
-see note  :  normal
-see note  :  normal
-see note  :  normal
-Support was removed in Gecko 7.0.  :  normal
-Support was removed in Gecko 7.0.  :  normal
 Supported under the older name autobuffer  :  normal
 Targeting 23* See  :  prefix
 There are still differences with the latest spec:  :  normal
