@@ -3,3 +3,4 @@
 /test-results/
 .vagrant/
 npm-debug.log
+data/cache/

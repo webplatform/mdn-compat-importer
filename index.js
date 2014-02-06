@@ -68,14 +68,9 @@ Q.
   }).
 
   // transform to WPD format
-  then(function(tables) {
+  then(function(tableData) {
     //console.log(require('util').inspect(tables, { depth: 4 })); // uncomment to see the object, single page mode from above recommended
-    var wpd = {};
-    _.each(tables, function(table, url) {
-      var compat = converter.convert(table, url);
-      wpd[compat.uuid] = compat.data;
-    });
-    return wpd;
+    return converter.convert(tableData);
   }).
 
   // save to disk
