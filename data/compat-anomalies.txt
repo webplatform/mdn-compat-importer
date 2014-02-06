@@ -9,70 +9,6 @@
 (recognized but no UI)  :  normal
 (Removed in Opera 15)  :  normal
 (see )  :  normal
-(Yes) ()  :  normal
-(Yes) ()  :  normal
-(Yes) (behind the dom.undo_manager.enabled pref)  :  normal
-(Yes) (Main only) (Not in Chromium)  :  normal
-(Yes) (Not in Chromium)  :  normal
-(Yes) (Not in Chromium)  :  normal
-(Yes) (Not in Chromium)  :  normal
-(Yes) (recognized but no UI)  :  normal
-(Yes) (recognized but no UI)  :  normal
-(Yes) (recognized but no UI)  :  normal
-(Yes) (recognized but no UI)  :  normal
-(Yes) (recognized but no UI)  :  normal
-(Yes) (recognized but no UI)  :  normal
-(Yes) (see note)  :  prefix
-(Yes) [*]  :  normal
-(Yes) [1]  :  normal
-(Yes) [1]  :  normal
-(Yes) [1]  :  normal
-(Yes) but without effect  :  normal
-(Yes) but without effect  :  normal
-(Yes) but without effect  :  normal
-(Yes) but without effect  :  normal
-(Yes) but without effect  :  normal
-(Yes) but without effect  :  normal
-(Yes) with the non-standard name -webkit-optimize-contrast  :  normal
-(Yes) with the non-standard name webkitMatchesSelector  :  normal
-(Yes) with the non-standard name webkitMatchesSelector  :  normal
-(Yes)()  :  normal
-(Yes)()  :  normal
-(Yes)(see note)  :  normal
-(Yes)[1][2]  :  normal
-(Yes)as webkitURL  :  normal
-(Yes)as webkitURL  :  normal
--  :  normal
--  :  normal
--  :  normal
----  :  normal
----  :  normal
----  :  normal
----  :  normal
----  :  normal
----  :  normal
----  :  normal
----  :  normal
----  :  normal
----  :  normal
----  :  normal
----  :  normal
----  :  normal
----  :  normal
----  :  normal
----  :  normal
----  :  normal
----  :  normal
----  :  normal
----  :  normal
----  :  normal
----  :  normal
----  :  normal
----  :  normal
----  :  normal
----  :  normal
----  :  normal
----  :  normal
 -moz-border-radius-bottomleft  :  normal
 -moz-border-radius-bottomright  :  normal
 -moz-border-radius-topleft  :  normal
@@ -116,16 +52,6 @@
 ? 9.8.0  :  normal
 ??  :  normal
 ?`  :  normal
-Activated on Nightly only  :  normal
-Activated on Nightly only  :  normal
-Activated on Nightly only  :  normal
-Activated on Nightly only  :  normal
-Activated on Nightly only  :  normal
-Activated on Nightly only  :  normal
-Activated on Nightly only  :  normal
-Activated on Nightly only  :  normal
-Activated on Nightly only (24)  :  normal
-Activated on Nightly only (24)  :  normal
 Advanced support  :  normal
 Android 2.2 (Faulty in a WebView component, see Issue )  :  normal
 At least 3  :  normal
@@ -172,12 +98,6 @@ limited to &  :  prefix
 limited to &  :  prefix
 Linux: Always returns true For history, see  :  normal
 Mango 7.5  :  normal
-Nightly  :  normal
-Nightly  :  normal
-nightly  :  normal
-Nightly build  :  normal
-Nightly build  :  normal
-Nightly build (537.1)  :  normal
 no  :  normal
 no  :  normal
 no  :  normal
@@ -185,116 +105,9 @@ no (IE 11 preview)  :  normal
 No automatic hyphenation.  :  normal
 No automatic hyphenation.  :  normal
 No more supported in Chrome 24 and later.  :  normal
-Not supported ()  :  normal
-Not supported ()  :  normal
-Not supported ()  :  normal
-Not supported ()  :  normal
-Not supported ()  :  normal
-Not supported ()  :  normal
-Not supported ()  :  normal
-Not supported ()  :  normal
-Not supported ()  :  normal
-Not supported ()  :  normal
-Not supported ()  :  normal
-Not supported ()  :  normal
-Not supported ()  :  normal
-Not supported (537.30)  :  normal
-Not supported (grid media type is not supported)  :  normal
-Not supported (see )  :  normal
-Not supported (see )  :  normal
-Not supported (see )  :  normal
-Not supported (see note)  :  normal
-Not supported (see Webkit note)  :  normal
-Not supported (see Webkit note)  :  normal
-Not supported (tv media type is not supported)  :  normal
-Not supported [*]  :  normal
-Not supported [*]  :  normal
-Not supported [*]  :  normal
-Not supported [*]  :  normal
-Not supported [*]  :  normal
-Not supported [*]  :  normal
-Not supported [*]  :  normal
-Not supported [*]  :  normal
-Not supported [*]  :  normal
-Not supported [*]  :  normal
-Not supported [*]  :  normal
-Not supported [*]  :  normal
-Not supported [*]  :  normal
-Not supported [*]  :  normal
-Not supported [*]  :  normal
-Not supported [*]  :  normal
-Not supported [*]  :  normal
-Not supported [*]  :  normal
-Not supported [*]  :  normal
-Not supported [*]  :  normal
-Not supported [*]  :  normal
-Not supported [*]  :  normal
-Not supported [*]  :  normal
-Not supported [*]  :  normal
-Not supported [*]  :  normal
-Not supported [*]  :  normal
-Not supported [1]  :  normal
-Not supported [1]  :  normal
-Not supported [1]  :  normal
-Not supported [1]  :  normal
-Not supported [1]  :  normal
-Not supported [1]  :  normal
-Not supported [1]  :  normal
-Not supported [1]  :  normal
-Not supported [1]  :  normal
-Not supported [1]  :  normal
-Not supported [1]  :  normal
-Not supported [1]  :  normal
-Not supported [1]  :  normal
-Not supported [1]  :  normal
-Not supported [1]  :  normal
-Not supported [1]  :  normal
-Not supported [1]  :  normal
-Not supported [1]  :  normal
-Not supported [1]  :  normal
-Not supported [1]  :  normal
-Not supported [1]  :  normal
-Not supported [1]  :  normal
-Not supported [1]  :  normal
-Not supported [1]  :  normal
-Not supported [1]  :  normal
-Not supported [1]  :  normal
-Not supported [1]  :  normal
-Not supported [1]  :  normal
-Not supported [1]  :  normal
-Not supported [1]  :  normal
-Not supported [1]  :  normal
-Not supported [1]  :  normal
-Not supported [1]  :  normal
-Not supported [1]  :  normal
-Not supported [1]  :  normal
-Not supported [1]  :  normal
-Not supported [1]  :  normal
-Not supported [1]  :  normal
-Not supported [1]  :  normal
-Not supported [1]  :  normal
-Not supported [1]  :  normal
-Not supported [1]  :  normal
-Not supported [3]  :  normal
-Not supported [3]  :  normal
-Not supported [3]  :  normal
-Not supported [3]  :  normal
-Not supported [3]  :  normal
-Not supported but in tests builds since WebKit r140374  :  normal
-Not supported since 15.0  :  normal
-Not supported since 15.0  :  normal
-Not supported since 23.0 (23.0)  :  normal
-Not supported since 23.0 (23.0)  :  normal
-Not supported – use the  :  normal
-Not supported()  :  normal
-Not supported(see note)  :  normal
-Not supported[*]  :  normal
-Not supported[*]  :  normal
 old webkit syntax  :  normal
 old webkit syntax for iOS 4.2 and older  :  normal
 Older versions of Safari (up to at least 5.1.7) incorrectly interpret clip: auto as clip: rect(auto, auto, auto, auto).  :  normal
-On Nightly, behind the media.webvtt.enabled preference.  :  normal
-On Nightly, behind the media.webvtt.enabled preference.  :  normal
 Partial (see below)  :  normal
 Partial (see below)  :  normal
 Partial (see below)  :  normal
@@ -360,9 +173,3 @@ Work is continuing on  :  normal
 Workaround: Use the value of the element's color property.  :  normal
 WP7 Mango  :  normal
 WP7 Mango  :  normal
-Yes (6)  :  normal
-Yes (default is false)  :  normal
-Yes (default is false)  :  normal
-yes [1]  :  normal
-Yes(18)  :  normal
-yes, but see below  :  normal

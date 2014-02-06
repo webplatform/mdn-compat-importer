@@ -1369,7 +1369,10 @@
                         "9.5": "y"
                     }, 
                     "Safari": {
-                        "Not supported [*]": "normal"
+                        "?": "n", 
+                        "notes": {
+                            "normal": "Not supported [*]"
+                        }
                     }
                 }, 
                 "dppx": {
@@ -1396,7 +1399,10 @@
             "mobile": {
                 "Basic support": {
                     "Android": {
-                        "Not supported [*]": "normal"
+                        "?": "n", 
+                        "notes": {
+                            "normal": "Not supported [*]"
+                        }
                     }, 
                     "Firefox Mobile": {
                         "?": "y", 
@@ -1414,7 +1420,10 @@
                         }
                     }, 
                     "Safari Mobile": {
-                        "Not supported [*]": "normal"
+                        "?": "n", 
+                        "notes": {
+                            "normal": "Not supported [*]"
+                        }
                     }
                 }, 
                 "dppx": {
@@ -1547,7 +1556,10 @@
                         "?": "u"
                     }, 
                     "Firefox": {
-                        "Not supported (grid media type is not supported)": "normal"
+                        "?": "n", 
+                        "notes": {
+                            "normal": "Not supported (grid media type is not supported)"
+                        }
                     }, 
                     "Internet Explorer": {
                         "?": "u"
@@ -1584,7 +1596,10 @@
                         "?": "u"
                     }, 
                     "Firefox": {
-                        "Not supported (tv media type is not supported)": "normal"
+                        "?": "n", 
+                        "notes": {
+                            "normal": "Not supported (tv media type is not supported)"
+                        }
                     }, 
                     "Internet Explorer": {
                         "?": "u"
@@ -1953,7 +1968,10 @@
                         "(see )": "normal"
                     }, 
                     "Internet Explorer": {
-                        "Not supported (see )": "normal"
+                        "?": "n", 
+                        "notes": {
+                            "normal": "Not supported (see )"
+                        }
                     }, 
                     "Opera": {
                         "17.0": "x"
@@ -5556,7 +5574,10 @@
                         "?": "n"
                     }, 
                     "Safari": {
-                        "Not supported [3]": "normal"
+                        "?": "n", 
+                        "notes": {
+                            "normal": "Not supported [3]"
+                        }
                     }
                 }
             }, 
@@ -6016,7 +6037,10 @@
                 }, 
                 "max-content, min-content, and fit-content": {
                     "Chrome": {
-                        "Not supported [3]": "normal"
+                        "?": "n", 
+                        "notes": {
+                            "normal": "Not supported [3]"
+                        }
                     }, 
                     "Firefox": {
                         "3.0": "x", 
@@ -6031,7 +6055,10 @@
                         "?": "n"
                     }, 
                     "Safari": {
-                        "Not supported [3]": "normal"
+                        "?": "n", 
+                        "notes": {
+                            "normal": "Not supported [3]"
+                        }
                     }
                 }
             }, 
@@ -8547,7 +8574,10 @@
                         "?": "n"
                     }, 
                     "Safari": {
-                        "Not supported (537.30)": "normal"
+                        "?": "n", 
+                        "notes": {
+                            "normal": "Not supported (537.30)"
+                        }
                     }
                 }, 
                 "vmin": {
@@ -8692,7 +8722,10 @@
                 }, 
                 "vmax": {
                     "Android": {
-                        "Not supported ()": "normal"
+                        "?": "n", 
+                        "notes": {
+                            "normal": "Not supported ()"
+                        }
                     }, 
                     "Firefox Mobile": {
                         "19.0": "y", 
@@ -8707,7 +8740,10 @@
                         "?": "n"
                     }, 
                     "Safari Mobile": {
-                        "Not supported ()": "normal"
+                        "?": "n", 
+                        "notes": {
+                            "normal": "Not supported ()"
+                        }
                     }
                 }
             }
@@ -9738,7 +9774,10 @@
                         }
                     }, 
                     "Firefox": {
-                        "Not supported [1]": "normal"
+                        "?": "n", 
+                        "notes": {
+                            "normal": "Not supported [1]"
+                        }
                     }, 
                     "Internet Explorer": {
                         "9.0": "y"
@@ -9766,7 +9805,10 @@
                         }
                     }, 
                     "Firefox Mobile": {
-                        "Not supported [1]": "normal"
+                        "?": "n", 
+                        "notes": {
+                            "normal": "Not supported [1]"
+                        }
                     }, 
                     "IE Mobile": {
                         "9.0": "y"
@@ -13257,7 +13299,10 @@
                         "1.0": "y"
                     }, 
                     "Firefox": {
-                        "Not supported ()": "normal"
+                        "?": "n", 
+                        "notes": {
+                            "normal": "Not supported ()"
+                        }
                     }, 
                     "Internet Explorer": {
                         "4.0": "y"
@@ -13299,7 +13344,10 @@
                         "?": "u"
                     }, 
                     "Firefox Mobile": {
-                        "Not supported ()": "normal"
+                        "?": "n", 
+                        "notes": {
+                            "normal": "Not supported ()"
+                        }
                     }, 
                     "IE Phone": {
                         "?": "u"
@@ -13353,7 +13401,10 @@
                         "1.0": "y"
                     }, 
                     "Firefox": {
-                        "Not supported ()": "normal"
+                        "?": "n", 
+                        "notes": {
+                            "normal": "Not supported ()"
+                        }
                     }, 
                     "Internet Explorer": {
                         "4.0": "y"
@@ -13395,7 +13446,10 @@
                         "?": "u"
                     }, 
                     "Firefox Mobile": {
-                        "Not supported ()": "normal"
+                        "?": "n", 
+                        "notes": {
+                            "normal": "Not supported ()"
+                        }
                     }, 
                     "IE Phone": {
                         "?": "u"
@@ -14813,7 +14867,10 @@
                 }, 
                 "max-content, min-content, fit-content, and fill-available": {
                     "Chrome": {
-                        "Not supported [3]": "normal"
+                        "?": "n", 
+                        "notes": {
+                            "normal": "Not supported [3]"
+                        }
                     }, 
                     "Firefox": {
                         "3.0": "x", 
@@ -14828,7 +14885,10 @@
                         "?": "n"
                     }, 
                     "Safari": {
-                        "Not supported [3]": "normal"
+                        "?": "n", 
+                        "notes": {
+                            "normal": "Not supported [3]"
+                        }
                     }
                 }
             }, 
@@ -15597,7 +15657,10 @@
                         }
                     }, 
                     "Firefox": {
-                        "Not supported ()": "normal"
+                        "?": "n", 
+                        "notes": {
+                            "normal": "Not supported ()"
+                        }
                     }, 
                     "Internet Explorer": {
                         "?": "u"
@@ -16341,7 +16404,10 @@
                         }
                     }, 
                     "Internet Explorer": {
-                        "Not supported [1]": "normal"
+                        "?": "n", 
+                        "notes": {
+                            "normal": "Not supported [1]"
+                        }
                     }, 
                     "Opera": {
                         "11.60": "y"
@@ -16625,7 +16691,10 @@
                         "?": "n"
                     }, 
                     "Opera": {
-                        "Not supported [*]": "normal"
+                        "?": "n", 
+                        "notes": {
+                            "normal": "Not supported [*]"
+                        }
                     }, 
                     "Safari": {
                         "?": "n"
@@ -19136,7 +19205,10 @@
             "desktop": {
                 "Basic support": {
                     "Chrome": {
-                        "Not supported [*]": "normal"
+                        "?": "n", 
+                        "notes": {
+                            "normal": "Not supported [*]"
+                        }
                     }, 
                     "Firefox": {
                         "?": "n"
@@ -19148,12 +19220,18 @@
                         "11.10": "y"
                     }, 
                     "Safari": {
-                        "Not supported [*]": "normal"
+                        "?": "n", 
+                        "notes": {
+                            "normal": "Not supported [*]"
+                        }
                     }
                 }, 
                 "column, avoid-column": {
                     "Chrome": {
-                        "Not supported [*]": "normal"
+                        "?": "n", 
+                        "notes": {
+                            "normal": "Not supported [*]"
+                        }
                     }, 
                     "Firefox": {
                         "?": "n"
@@ -19165,7 +19243,10 @@
                         "11.10": "y"
                     }, 
                     "Safari": {
-                        "Not supported [*]": "normal"
+                        "?": "n", 
+                        "notes": {
+                            "normal": "Not supported [*]"
+                        }
                     }
                 }, 
                 "recto, verso": {
@@ -19187,7 +19268,10 @@
                 }, 
                 "region, avoid-region": {
                     "Chrome": {
-                        "Not supported [*]": "normal"
+                        "?": "n", 
+                        "notes": {
+                            "normal": "Not supported [*]"
+                        }
                     }, 
                     "Firefox": {
                         "?": "n"
@@ -19199,14 +19283,20 @@
                         "?": "n"
                     }, 
                     "Safari": {
-                        "Not supported [*]": "normal"
+                        "?": "n", 
+                        "notes": {
+                            "normal": "Not supported [*]"
+                        }
                     }
                 }
             }, 
             "mobile": {
                 "Basic support": {
                     "Android": {
-                        "Not supported [*]": "normal"
+                        "?": "n", 
+                        "notes": {
+                            "normal": "Not supported [*]"
+                        }
                     }, 
                     "Firefox Mobile": {
                         "?": "n"
@@ -19218,12 +19308,18 @@
                         "?": "u"
                     }, 
                     "Safari Mobile": {
-                        "Not supported [*]": "normal"
+                        "?": "n", 
+                        "notes": {
+                            "normal": "Not supported [*]"
+                        }
                     }
                 }, 
                 "column, avoid-column": {
                     "Android": {
-                        "Not supported [*]": "normal"
+                        "?": "n", 
+                        "notes": {
+                            "normal": "Not supported [*]"
+                        }
                     }, 
                     "Firefox Mobile": {
                         "?": "n"
@@ -19235,7 +19331,10 @@
                         "?": "u"
                     }, 
                     "Safari Mobile": {
-                        "Not supported [*]": "normal"
+                        "?": "n", 
+                        "notes": {
+                            "normal": "Not supported [*]"
+                        }
                     }
                 }, 
                 "recto, verso": {
@@ -19257,7 +19356,10 @@
                 }, 
                 "region, avoid-region": {
                     "Android": {
-                        "Not supported [*]": "normal"
+                        "?": "n", 
+                        "notes": {
+                            "normal": "Not supported [*]"
+                        }
                     }, 
                     "Firefox Mobile": {
                         "?": "n"
@@ -19269,7 +19371,10 @@
                         "?": "n"
                     }, 
                     "Safari Mobile": {
-                        "Not supported[*]": "normal"
+                        "?": "n", 
+                        "notes": {
+                            "normal": "Not supported[*]"
+                        }
                     }
                 }
             }
@@ -19288,7 +19393,10 @@
             "desktop": {
                 "Basic support": {
                     "Chrome": {
-                        "Not supported [*]": "normal"
+                        "?": "n", 
+                        "notes": {
+                            "normal": "Not supported [*]"
+                        }
                     }, 
                     "Firefox": {
                         "?": "n"
@@ -19300,12 +19408,18 @@
                         "11.10": "y"
                     }, 
                     "Safari": {
-                        "Not supported [*]": "normal"
+                        "?": "n", 
+                        "notes": {
+                            "normal": "Not supported [*]"
+                        }
                     }
                 }, 
                 "column, avoid-column": {
                     "Chrome": {
-                        "Not supported [*]": "normal"
+                        "?": "n", 
+                        "notes": {
+                            "normal": "Not supported [*]"
+                        }
                     }, 
                     "Firefox": {
                         "?": "n"
@@ -19317,7 +19431,10 @@
                         "11.10": "y"
                     }, 
                     "Safari": {
-                        "Not supported [*]": "normal"
+                        "?": "n", 
+                        "notes": {
+                            "normal": "Not supported [*]"
+                        }
                     }
                 }, 
                 "recto, verso": {
@@ -19339,7 +19456,10 @@
                 }, 
                 "region, avoid-region": {
                     "Chrome": {
-                        "Not supported [*]": "normal"
+                        "?": "n", 
+                        "notes": {
+                            "normal": "Not supported [*]"
+                        }
                     }, 
                     "Firefox": {
                         "?": "n"
@@ -19351,14 +19471,20 @@
                         "?": "n"
                     }, 
                     "Safari": {
-                        "Not supported [*]": "normal"
+                        "?": "n", 
+                        "notes": {
+                            "normal": "Not supported [*]"
+                        }
                     }
                 }
             }, 
             "mobile": {
                 "Basic support": {
                     "Android": {
-                        "Not supported [*]": "normal"
+                        "?": "n", 
+                        "notes": {
+                            "normal": "Not supported [*]"
+                        }
                     }, 
                     "Firefox Mobile": {
                         "?": "n"
@@ -19370,12 +19496,18 @@
                         "?": "u"
                     }, 
                     "Safari Mobile": {
-                        "Not supported [*]": "normal"
+                        "?": "n", 
+                        "notes": {
+                            "normal": "Not supported [*]"
+                        }
                     }
                 }, 
                 "column, avoid-column": {
                     "Android": {
-                        "Not supported [*]": "normal"
+                        "?": "n", 
+                        "notes": {
+                            "normal": "Not supported [*]"
+                        }
                     }, 
                     "Firefox Mobile": {
                         "?": "n"
@@ -19387,7 +19519,10 @@
                         "?": "u"
                     }, 
                     "Safari Mobile": {
-                        "Not supported [*]": "normal"
+                        "?": "n", 
+                        "notes": {
+                            "normal": "Not supported [*]"
+                        }
                     }
                 }, 
                 "recto, verso": {
@@ -19409,7 +19544,10 @@
                 }, 
                 "region, avoid-region": {
                     "Android": {
-                        "Not supported [*]": "normal"
+                        "?": "n", 
+                        "notes": {
+                            "normal": "Not supported [*]"
+                        }
                     }, 
                     "Firefox Mobile": {
                         "?": "n"
@@ -19421,7 +19559,10 @@
                         "?": "n"
                     }, 
                     "Safari Mobile": {
-                        "Not supported[*]": "normal"
+                        "?": "n", 
+                        "notes": {
+                            "normal": "Not supported[*]"
+                        }
                     }
                 }
             }
@@ -21319,7 +21460,10 @@
                         "?": "n"
                     }, 
                     "Firefox": {
-                        "Not supported (see )": "normal"
+                        "?": "n", 
+                        "notes": {
+                            "normal": "Not supported (see )"
+                        }
                     }, 
                     "Internet Explorer": {
                         "?": "n"
@@ -21358,7 +21502,10 @@
                         "?": "u"
                     }, 
                     "Firefox Mobile": {
-                        "Not supported (see )": "normal"
+                        "?": "n", 
+                        "notes": {
+                            "normal": "Not supported (see )"
+                        }
                     }, 
                     "IE Mobile": {
                         "?": "n"
@@ -23007,7 +23154,10 @@
             "desktop": {
                 "Basic support": {
                     "Chrome": {
-                        "Not supported (see Webkit note)": "normal"
+                        "?": "n", 
+                        "notes": {
+                            "normal": "Not supported (see Webkit note)"
+                        }
                     }, 
                     "Firefox": {
                         "?": "n"
@@ -23019,7 +23169,10 @@
                         "?": "n"
                     }, 
                     "Safari": {
-                        "Not supported (see Webkit note)": "normal"
+                        "?": "n", 
+                        "notes": {
+                            "normal": "Not supported (see Webkit note)"
+                        }
                     }
                 }, 
                 "Percentages": {
@@ -25295,7 +25448,10 @@
             "desktop": {
                 "Basic support": {
                     "Chrome": {
-                        "Not supported (see note)": "normal"
+                        "?": "n", 
+                        "notes": {
+                            "normal": "Not supported (see note)"
+                        }
                     }, 
                     "Firefox": {
                         "?": "n"
@@ -25307,7 +25463,10 @@
                         "?": "n"
                     }, 
                     "Safari": {
-                        "Not supported(see note)": "normal"
+                        "?": "n", 
+                        "notes": {
+                            "normal": "Not supported(see note)"
+                        }
                     }
                 }
             }, 
@@ -37700,7 +37859,10 @@
                         "?": "n"
                     }, 
                     "Safari": {
-                        "Not supported but in tests builds since WebKit r140374": "normal"
+                        "?": "n", 
+                        "notes": {
+                            "normal": "Not supported but in tests builds since WebKit r140374"
+                        }
                     }
                 }
             }, 
@@ -39997,13 +40159,19 @@
                         "?": "n"
                     }, 
                     "Firefox": {
-                        "Not supported since 23.0 (23.0)": "normal"
+                        "?": "n", 
+                        "notes": {
+                            "normal": "Not supported since 23.0 (23.0)"
+                        }
                     }, 
                     "Internet Explorer": {
                         "?": "n"
                     }, 
                     "Opera": {
-                        "Not supported since 15.0": "normal"
+                        "?": "n", 
+                        "notes": {
+                            "normal": "Not supported since 15.0"
+                        }
                     }, 
                     "Safari": {
                         "?": "n"
@@ -40016,13 +40184,19 @@
                         "?": "n"
                     }, 
                     "Firefox Mobile": {
-                        "Not supported since 23.0 (23.0)": "normal"
+                        "?": "n", 
+                        "notes": {
+                            "normal": "Not supported since 23.0 (23.0)"
+                        }
                     }, 
                     "IE Phone": {
                         "?": "n"
                     }, 
                     "Opera Mobile": {
-                        "Not supported since 15.0": "normal"
+                        "?": "n", 
+                        "notes": {
+                            "normal": "Not supported since 15.0"
+                        }
                     }, 
                     "Safari Mobile": {
                         "?": "n"
@@ -40048,7 +40222,10 @@
                         "?": "u"
                     }, 
                     "Firefox": {
-                        "Not supported [1]": "normal"
+                        "?": "n", 
+                        "notes": {
+                            "normal": "Not supported [1]"
+                        }
                     }, 
                     "Internet Explorer": {
                         "?": "y", 
@@ -40070,7 +40247,10 @@
                         "?": "u"
                     }, 
                     "Firefox Mobile": {
-                        "Not supported [1]": "normal"
+                        "?": "n", 
+                        "notes": {
+                            "normal": "Not supported [1]"
+                        }
                     }, 
                     "IE Mobile": {
                         "?": "u"
@@ -41209,7 +41389,10 @@
                         "?": "n"
                     }, 
                     "Safari": {
-                        "Not supported()": "normal"
+                        "?": "n", 
+                        "notes": {
+                            "normal": "Not supported()"
+                        }
                     }
                 }
             }, 
@@ -41802,7 +41985,10 @@
             "desktop": {
                 "Basic support": {
                     "Chrome": {
-                        "Not supported [1]": "normal"
+                        "?": "n", 
+                        "notes": {
+                            "normal": "Not supported [1]"
+                        }
                     }, 
                     "Firefox": {
                         "21.0": "y", 
@@ -42799,7 +42985,10 @@
                         "?": "u"
                     }, 
                     "Firefox": {
-                        "Not supported ()": "normal"
+                        "?": "n", 
+                        "notes": {
+                            "normal": "Not supported ()"
+                        }
                     }, 
                     "Internet Explorer": {
                         "?": "u"
@@ -45133,7 +45322,10 @@
                         "?": "u"
                     }, 
                     "Firefox": {
-                        "Not supported ()": "normal"
+                        "?": "n", 
+                        "notes": {
+                            "normal": "Not supported ()"
+                        }
                     }, 
                     "Internet Explorer": {
                         "?": "u"
@@ -45150,7 +45342,10 @@
                         "?": "u"
                     }, 
                     "Firefox": {
-                        "Not supported ()": "normal"
+                        "?": "n", 
+                        "notes": {
+                            "normal": "Not supported ()"
+                        }
                     }, 
                     "Internet Explorer": {
                         "?": "u"
@@ -45201,7 +45396,10 @@
                         "?": "u"
                     }, 
                     "Firefox Mobile": {
-                        "Not supported ()": "normal"
+                        "?": "n", 
+                        "notes": {
+                            "normal": "Not supported ()"
+                        }
                     }, 
                     "IE Phone": {
                         "?": "u"
@@ -45218,7 +45416,10 @@
                         "?": "u"
                     }, 
                     "Firefox Mobile": {
-                        "Not supported ()": "normal"
+                        "?": "n", 
+                        "notes": {
+                            "normal": "Not supported ()"
+                        }
                     }, 
                     "IE Phone": {
                         "?": "u"
@@ -51229,7 +51430,10 @@
             "desktop": {
                 "Basic support": {
                     "Chrome": {
-                        "Not supported [1]": "normal"
+                        "?": "n", 
+                        "notes": {
+                            "normal": "Not supported [1]"
+                        }
                     }, 
                     "Firefox": {
                         "3.5": "y", 
@@ -51238,23 +51442,38 @@
                         }
                     }, 
                     "Internet Explorer": {
-                        "Not supported [1]": "normal"
+                        "?": "n", 
+                        "notes": {
+                            "normal": "Not supported [1]"
+                        }
                     }, 
                     "Opera": {
-                        "Not supported [1]": "normal"
+                        "?": "n", 
+                        "notes": {
+                            "normal": "Not supported [1]"
+                        }
                     }, 
                     "Safari": {
-                        "Not supported [1]": "normal"
+                        "?": "n", 
+                        "notes": {
+                            "normal": "Not supported [1]"
+                        }
                     }
                 }
             }, 
             "mobile": {
                 "Basic support": {
                     "Android": {
-                        "Not supported [1]": "normal"
+                        "?": "n", 
+                        "notes": {
+                            "normal": "Not supported [1]"
+                        }
                     }, 
                     "Chrome for Android": {
-                        "Not supported [1]": "normal"
+                        "?": "n", 
+                        "notes": {
+                            "normal": "Not supported [1]"
+                        }
                     }, 
                     "Firefox Mobile": {
                         "1.0": "y", 
@@ -51263,13 +51482,22 @@
                         }
                     }, 
                     "IE Mobile": {
-                        "Not supported [1]": "normal"
+                        "?": "n", 
+                        "notes": {
+                            "normal": "Not supported [1]"
+                        }
                     }, 
                     "Opera Mobile": {
-                        "Not supported [1]": "normal"
+                        "?": "n", 
+                        "notes": {
+                            "normal": "Not supported [1]"
+                        }
                     }, 
                     "Safari Mobile": {
-                        "Not supported [1]": "normal"
+                        "?": "n", 
+                        "notes": {
+                            "normal": "Not supported [1]"
+                        }
                     }
                 }
             }
@@ -51288,7 +51516,10 @@
             "desktop": {
                 "Basic support": {
                     "Chrome": {
-                        "Not supported [1]": "normal"
+                        "?": "n", 
+                        "notes": {
+                            "normal": "Not supported [1]"
+                        }
                     }, 
                     "Firefox": {
                         "22.0": "y", 
@@ -51297,13 +51528,22 @@
                         }
                     }, 
                     "Internet Explorer": {
-                        "Not supported [1]": "normal"
+                        "?": "n", 
+                        "notes": {
+                            "normal": "Not supported [1]"
+                        }
                     }, 
                     "Opera": {
-                        "Not supported [1]": "normal"
+                        "?": "n", 
+                        "notes": {
+                            "normal": "Not supported [1]"
+                        }
                     }, 
                     "Safari": {
-                        "Not supported [1]": "normal"
+                        "?": "n", 
+                        "notes": {
+                            "normal": "Not supported [1]"
+                        }
                     }
                 }, 
                 "origin": {
@@ -51387,10 +51627,16 @@
             "mobile": {
                 "Basic support": {
                     "Android": {
-                        "Not supported [1]": "normal"
+                        "?": "n", 
+                        "notes": {
+                            "normal": "Not supported [1]"
+                        }
                     }, 
                     "Chrome for Android": {
-                        "Not supported [1]": "normal"
+                        "?": "n", 
+                        "notes": {
+                            "normal": "Not supported [1]"
+                        }
                     }, 
                     "Firefox Mobile": {
                         "22.0": "y", 
@@ -51399,13 +51645,22 @@
                         }
                     }, 
                     "IE Mobile": {
-                        "Not supported [1]": "normal"
+                        "?": "n", 
+                        "notes": {
+                            "normal": "Not supported [1]"
+                        }
                     }, 
                     "Opera Mobile": {
-                        "Not supported [1]": "normal"
+                        "?": "n", 
+                        "notes": {
+                            "normal": "Not supported [1]"
+                        }
                     }, 
                     "Safari Mobile": {
-                        "Not supported [1]": "normal"
+                        "?": "n", 
+                        "notes": {
+                            "normal": "Not supported [1]"
+                        }
                     }
                 }, 
                 "origin": {
@@ -52211,7 +52466,10 @@
                 }, 
                 "sendAsBinary(DOMString)": {
                     "Chrome": {
-                        "Not supported \u2013 use the": "normal"
+                        "?": "n", 
+                        "notes": {
+                            "normal": "Not supported \u2013 use the"
+                        }
                     }, 
                     "Firefox": {
                         "1.9": "y"
@@ -52626,7 +52884,10 @@
             "desktop": {
                 "Basic support": {
                     "Chrome": {
-                        "Not supported [1]": "normal"
+                        "?": "n", 
+                        "notes": {
+                            "normal": "Not supported [1]"
+                        }
                     }, 
                     "Firefox": {
                         "22.0": "y", 
@@ -52635,23 +52896,38 @@
                         }
                     }, 
                     "Internet Explorer": {
-                        "Not supported [1]": "normal"
+                        "?": "n", 
+                        "notes": {
+                            "normal": "Not supported [1]"
+                        }
                     }, 
                     "Opera": {
-                        "Not supported [1]": "normal"
+                        "?": "n", 
+                        "notes": {
+                            "normal": "Not supported [1]"
+                        }
                     }, 
                     "Safari": {
-                        "Not supported [1]": "normal"
+                        "?": "n", 
+                        "notes": {
+                            "normal": "Not supported [1]"
+                        }
                     }
                 }
             }, 
             "mobile": {
                 "Basic support": {
                     "Android": {
-                        "Not supported [1]": "normal"
+                        "?": "n", 
+                        "notes": {
+                            "normal": "Not supported [1]"
+                        }
                     }, 
                     "Chrome for Android": {
-                        "Not supported [1]": "normal"
+                        "?": "n", 
+                        "notes": {
+                            "normal": "Not supported [1]"
+                        }
                     }, 
                     "Firefox Mobile": {
                         "22.0": "y", 
@@ -52660,13 +52936,22 @@
                         }
                     }, 
                     "IE Mobile": {
-                        "Not supported [1]": "normal"
+                        "?": "n", 
+                        "notes": {
+                            "normal": "Not supported [1]"
+                        }
                     }, 
                     "Opera Mobile": {
-                        "Not supported [1]": "normal"
+                        "?": "n", 
+                        "notes": {
+                            "normal": "Not supported [1]"
+                        }
                     }, 
                     "Safari Mobile": {
-                        "Not supported [1]": "normal"
+                        "?": "n", 
+                        "notes": {
+                            "normal": "Not supported [1]"
+                        }
                     }
                 }
             }
@@ -54525,19 +54810,31 @@
             "desktop": {
                 "Basic support": {
                     "Chrome": {
-                        "Not supported [1]": "normal"
+                        "?": "n", 
+                        "notes": {
+                            "normal": "Not supported [1]"
+                        }
                     }, 
                     "Firefox": {
                         "?": "n"
                     }, 
                     "Internet Explorer": {
-                        "Not supported [1]": "normal"
+                        "?": "n", 
+                        "notes": {
+                            "normal": "Not supported [1]"
+                        }
                     }, 
                     "Opera": {
-                        "Not supported [1]": "normal"
+                        "?": "n", 
+                        "notes": {
+                            "normal": "Not supported [1]"
+                        }
                     }, 
                     "Safari": {
-                        "Not supported [1]": "normal"
+                        "?": "n", 
+                        "notes": {
+                            "normal": "Not supported [1]"
+                        }
                     }
                 }, 
                 "window.location.origin": {
@@ -54564,22 +54861,37 @@
             "mobile": {
                 "Basic support": {
                     "Android": {
-                        "Not supported [1]": "normal"
+                        "?": "n", 
+                        "notes": {
+                            "normal": "Not supported [1]"
+                        }
                     }, 
                     "Chrome for Android": {
-                        "Not supported [1]": "normal"
+                        "?": "n", 
+                        "notes": {
+                            "normal": "Not supported [1]"
+                        }
                     }, 
                     "Firefox Mobile": {
                         "?": "n"
                     }, 
                     "IE Mobile": {
-                        "Not supported [1]": "normal"
+                        "?": "n", 
+                        "notes": {
+                            "normal": "Not supported [1]"
+                        }
                     }, 
                     "Opera Mobile": {
-                        "Not supported [1]": "normal"
+                        "?": "n", 
+                        "notes": {
+                            "normal": "Not supported [1]"
+                        }
                     }, 
                     "Safari Mobile": {
-                        "Not supported [1]": "normal"
+                        "?": "n", 
+                        "notes": {
+                            "normal": "Not supported [1]"
+                        }
                     }
                 }, 
                 "window.location.origin": {
@@ -56900,7 +57212,10 @@
                         }
                     }, 
                     "Internet Explorer": {
-                        "Not supported ()": "normal"
+                        "?": "n", 
+                        "notes": {
+                            "normal": "Not supported ()"
+                        }
                     }, 
                     "Opera": {
                         "?": "n"
