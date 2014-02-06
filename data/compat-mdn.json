@@ -11535,7 +11535,7 @@
                         "?": "n"
                     }, 
                     "Safari": {
-                        "?": "u x", 
+                        "?": "n u x", 
                         "notes": {
                             "prefix": "(537.33)"
                         }
@@ -16021,7 +16021,7 @@
                         "?": "x"
                     }, 
                     "Firefox": {
-                        "?": "u x", 
+                        "?": "y u x", 
                         "notes": {
                             "prefix": "limited to &"
                         }
@@ -16083,7 +16083,7 @@
                         "?": "u"
                     }, 
                     "Firefox Mobile": {
-                        "?": "u x", 
+                        "?": "y u x", 
                         "notes": {
                             "prefix": "limited to &"
                         }
@@ -21623,7 +21623,7 @@
                 }, 
                 "Gradients": {
                     "Android Browser": {
-                        "?": "u y", 
+                        "?": "x u y", 
                         "notes": {
                             "normal": "old webkit syntax"
                         }
@@ -21635,7 +21635,7 @@
                         "?": "u"
                     }, 
                     "iOS Safari": {
-                        "?": "u y", 
+                        "?": "x u y", 
                         "notes": {
                             "normal": "old webkit syntax for iOS 4.2 and older"
                         }
