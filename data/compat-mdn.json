@@ -226,7 +226,10 @@
                         "10": "x"
                     }, 
                     "Opera": {
-                        "-": "normal"
+                        "?": "u", 
+                        "notes": {
+                            "normal": "-"
+                        }
                     }, 
                     "Safari": {
                         "?": "x", 
@@ -7950,7 +7953,10 @@
                         "10.60": "x"
                     }, 
                     "Safari": {
-                        "Nightly build (537.1)": "normal"
+                        "?": "a", 
+                        "notes": {
+                            "normal": "Nightly build (537.1)"
+                        }
                     }
                 }
             }, 
@@ -8194,7 +8200,10 @@
                         "12.1": "y"
                     }, 
                     "Safari": {
-                        "Nightly": "normal"
+                        "?": "a", 
+                        "notes": {
+                            "normal": "Nightly"
+                        }
                     }
                 }, 
                 "steps()": {
@@ -19024,7 +19033,10 @@
                         "9": "y"
                     }, 
                     "Opera": {
-                        "-": "normal"
+                        "?": "u", 
+                        "notes": {
+                            "normal": "-"
+                        }
                     }, 
                     "Safari": {
                         "6": "x", 
@@ -19052,7 +19064,10 @@
                         "9": "y"
                     }, 
                     "Opera": {
-                        "-": "normal"
+                        "?": "u", 
+                        "notes": {
+                            "normal": "-"
+                        }
                     }, 
                     "Safari": {
                         "6": "x", 
@@ -21743,7 +21758,10 @@
                         "10.5": "y"
                     }, 
                     "Safari": {
-                        "Nightly": "normal"
+                        "?": "a", 
+                        "notes": {
+                            "normal": "Nightly"
+                        }
                     }
                 }, 
                 "Multiple backgrounds": {
@@ -31014,19 +31032,34 @@
             "mobile": {
                 "Basic support": {
                     "Android": {
-                        "---": "normal"
+                        "?": "u", 
+                        "notes": {
+                            "normal": "---"
+                        }
                     }, 
                     "Firefox Mobile": {
-                        "---": "normal"
+                        "?": "u", 
+                        "notes": {
+                            "normal": "---"
+                        }
                     }, 
                     "IE Mobile": {
-                        "---": "normal"
+                        "?": "u", 
+                        "notes": {
+                            "normal": "---"
+                        }
                     }, 
                     "Opera Mobile": {
-                        "---": "normal"
+                        "?": "u", 
+                        "notes": {
+                            "normal": "---"
+                        }
                     }, 
                     "Safari Mobile": {
-                        "---": "normal"
+                        "?": "u", 
+                        "notes": {
+                            "normal": "---"
+                        }
                     }
                 }
             }
@@ -32594,7 +32627,10 @@
                         "11": "y"
                     }, 
                     "Safari": {
-                        "nightly": "normal"
+                        "?": "a", 
+                        "notes": {
+                            "normal": "nightly"
+                        }
                     }
                 }
             }, 
@@ -33762,7 +33798,10 @@
                         "?": "u"
                     }, 
                     "Firefox": {
-                        "On Nightly, behind the media.webvtt.enabled preference.": "normal"
+                        "?": "a", 
+                        "notes": {
+                            "normal": "On Nightly, behind the media.webvtt.enabled preference."
+                        }
                     }, 
                     "Internet Explorer": {
                         "?": "u"
@@ -34202,7 +34241,10 @@
                         "?": "u"
                     }, 
                     "Firefox Mobile": {
-                        "On Nightly, behind the media.webvtt.enabled preference.": "normal"
+                        "?": "a", 
+                        "notes": {
+                            "normal": "On Nightly, behind the media.webvtt.enabled preference."
+                        }
                     }, 
                     "IE Mobile": {
                         "?": "u"
@@ -37916,7 +37958,10 @@
                 "allowfullscreen": {
                     "Chrome": {
                         "17": "x", 
-                        "Nightly build": "normal"
+                        "?": "a", 
+                        "notes": {
+                            "normal": "Nightly build"
+                        }
                     }, 
                     "Firefox": {
                         "18.0": "y", 
@@ -41291,7 +41336,10 @@
                         "?": "n"
                     }, 
                     "Safari": {
-                        "Nightly build": "normal"
+                        "?": "a", 
+                        "notes": {
+                            "normal": "Nightly build"
+                        }
                     }
                 }
             }, 
@@ -48768,7 +48816,10 @@
             "mobile": {
                 "Dedicated workers": {
                     "Android": {
-                        "---": "normal"
+                        "?": "u", 
+                        "notes": {
+                            "normal": "---"
+                        }
                     }, 
                     "Chrome for Android": {
                         "0.16": "y"
@@ -48780,7 +48831,10 @@
                         }
                     }, 
                     "IE Phone": {
-                        "---": "normal"
+                        "?": "u", 
+                        "notes": {
+                            "normal": "---"
+                        }
                     }, 
                     "Opera Mobile": {
                         "11": "y"
@@ -48791,7 +48845,10 @@
                 }, 
                 "Passing data using structured cloning .": {
                     "Android": {
-                        "---": "normal"
+                        "?": "u", 
+                        "notes": {
+                            "normal": "---"
+                        }
                     }, 
                     "Chrome for Android": {
                         "0.16": "y"
@@ -48800,18 +48857,30 @@
                         "8": "y"
                     }, 
                     "IE Phone": {
-                        "---": "normal"
+                        "?": "u", 
+                        "notes": {
+                            "normal": "---"
+                        }
                     }, 
                     "Opera Mobile": {
-                        "---": "normal"
+                        "?": "u", 
+                        "notes": {
+                            "normal": "---"
+                        }
                     }, 
                     "Safari Mobile": {
-                        "---": "normal"
+                        "?": "u", 
+                        "notes": {
+                            "normal": "---"
+                        }
                     }
                 }, 
                 "Passing data using transferable objects": {
                     "Android": {
-                        "---": "normal"
+                        "?": "u", 
+                        "notes": {
+                            "normal": "---"
+                        }
                     }, 
                     "Chrome for Android": {
                         "?": "u"
@@ -48820,33 +48889,57 @@
                         "18": "y"
                     }, 
                     "IE Phone": {
-                        "---": "normal"
+                        "?": "u", 
+                        "notes": {
+                            "normal": "---"
+                        }
                     }, 
                     "Opera Mobile": {
-                        "---": "normal"
+                        "?": "u", 
+                        "notes": {
+                            "normal": "---"
+                        }
                     }, 
                     "Safari Mobile": {
-                        "---": "normal"
+                        "?": "u", 
+                        "notes": {
+                            "normal": "---"
+                        }
                     }
                 }, 
                 "Shared workers": {
                     "Android": {
-                        "---": "normal"
+                        "?": "u", 
+                        "notes": {
+                            "normal": "---"
+                        }
                     }, 
                     "Chrome for Android": {
                         "?": "n"
                     }, 
                     "Firefox Mobile": {
-                        "---": "normal"
+                        "?": "u", 
+                        "notes": {
+                            "normal": "---"
+                        }
                     }, 
                     "IE Phone": {
-                        "---": "normal"
+                        "?": "u", 
+                        "notes": {
+                            "normal": "---"
+                        }
                     }, 
                     "Opera Mobile": {
-                        "---": "normal"
+                        "?": "u", 
+                        "notes": {
+                            "normal": "---"
+                        }
                     }, 
                     "Safari Mobile": {
-                        "---": "normal"
+                        "?": "u", 
+                        "notes": {
+                            "normal": "---"
+                        }
                     }
                 }
             }
@@ -52598,7 +52691,10 @@
                         }
                     }, 
                     "Firefox": {
-                        "Activated on Nightly only": "normal"
+                        "?": "a", 
+                        "notes": {
+                            "normal": "Activated on Nightly only"
+                        }
                     }, 
                     "Internet Explorer": {
                         "?": "n"
@@ -52617,7 +52713,10 @@
                         "?": "u"
                     }, 
                     "Firefox Mobile": {
-                        "Activated on Nightly only": "normal"
+                        "?": "a", 
+                        "notes": {
+                            "normal": "Activated on Nightly only"
+                        }
                     }, 
                     "IE Phone": {
                         "?": "n"
@@ -52651,7 +52750,10 @@
                         }
                     }, 
                     "Firefox": {
-                        "Activated on Nightly only": "normal"
+                        "?": "a", 
+                        "notes": {
+                            "normal": "Activated on Nightly only"
+                        }
                     }, 
                     "Internet Explorer": {
                         "?": "n"
@@ -52670,7 +52772,10 @@
                         "?": "u"
                     }, 
                     "Firefox Mobile": {
-                        "Activated on Nightly only": "normal"
+                        "?": "a", 
+                        "notes": {
+                            "normal": "Activated on Nightly only"
+                        }
                     }, 
                     "IE Phone": {
                         "?": "n"
@@ -54305,7 +54410,10 @@
                         }
                     }, 
                     "Firefox": {
-                        "Activated on Nightly only (24)": "normal"
+                        "?": "a", 
+                        "notes": {
+                            "normal": "Activated on Nightly only (24)"
+                        }
                     }, 
                     "Internet Explorer": {
                         "?": "n"
@@ -54324,7 +54432,10 @@
                         "?": "n"
                     }, 
                     "Firefox Mobile": {
-                        "Activated on Nightly only": "normal"
+                        "?": "a", 
+                        "notes": {
+                            "normal": "Activated on Nightly only"
+                        }
                     }, 
                     "IE Phone": {
                         "?": "n"
@@ -54630,7 +54741,10 @@
                         }
                     }, 
                     "Firefox": {
-                        "Activated on Nightly only": "normal"
+                        "?": "a", 
+                        "notes": {
+                            "normal": "Activated on Nightly only"
+                        }
                     }, 
                     "Internet Explorer": {
                         "?": "n"
@@ -54649,7 +54763,10 @@
                         "?": "n"
                     }, 
                     "Firefox Mobile": {
-                        "Activated on Nightly only": "normal"
+                        "?": "a", 
+                        "notes": {
+                            "normal": "Activated on Nightly only"
+                        }
                     }, 
                     "IE Phone": {
                         "?": "n"
@@ -62278,7 +62395,10 @@
             "desktop": {
                 "Basic support": {
                     "Chrome": {
-                        "---": "normal"
+                        "?": "u", 
+                        "notes": {
+                            "normal": "---"
+                        }
                     }, 
                     "Firefox": {
                         "11.0": "y", 
@@ -62287,20 +62407,32 @@
                         }
                     }, 
                     "Internet Explorer": {
-                        "---": "normal"
+                        "?": "u", 
+                        "notes": {
+                            "normal": "---"
+                        }
                     }, 
                     "Opera": {
-                        "---": "normal"
+                        "?": "u", 
+                        "notes": {
+                            "normal": "---"
+                        }
                     }, 
                     "Safari": {
-                        "---": "normal"
+                        "?": "u", 
+                        "notes": {
+                            "normal": "---"
+                        }
                     }
                 }
             }, 
             "mobile": {
                 "Basic support": {
                     "Android": {
-                        "---": "normal"
+                        "?": "u", 
+                        "notes": {
+                            "normal": "---"
+                        }
                     }, 
                     "Firefox Mobile": {
                         "11.0": "y", 
@@ -62309,13 +62441,22 @@
                         }
                     }, 
                     "IE Mobile": {
-                        "---": "normal"
+                        "?": "u", 
+                        "notes": {
+                            "normal": "---"
+                        }
                     }, 
                     "Opera Mobile": {
-                        "---": "normal"
+                        "?": "u", 
+                        "notes": {
+                            "normal": "---"
+                        }
                     }, 
                     "Safari Mobile": {
-                        "---": "normal"
+                        "?": "u", 
+                        "notes": {
+                            "normal": "---"
+                        }
                     }
                 }
             }
@@ -64340,7 +64481,10 @@
                         }
                     }, 
                     "Firefox": {
-                        "Activated on Nightly only (24)": "normal"
+                        "?": "a", 
+                        "notes": {
+                            "normal": "Activated on Nightly only (24)"
+                        }
                     }, 
                     "Internet Explorer": {
                         "?": "n"
@@ -64359,7 +64503,10 @@
                         "?": "n"
                     }, 
                     "Firefox Mobile": {
-                        "Activated on Nightly only": "normal"
+                        "?": "a", 
+                        "notes": {
+                            "normal": "Activated on Nightly only"
+                        }
                     }, 
                     "IE Phone": {
                         "?": "n"
