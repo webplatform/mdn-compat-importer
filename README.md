@@ -9,20 +9,20 @@ Reads MDN compatibility info from the site, and converts it from HTML to JSON.
 ### Installation
 
   - Clone this repository (you should fork first, if you want to contribute)
-  - Install [NodeJS](http://nodejs.org/), if you haven't already
-  - Run `npm install -g grunt-cli` (you might need sudo/admin for this)
-  - Run `npm install` from the directory to install the dependencies
-  - Run `node index.js` to run the tool
+  - Create a branch to create your work
+  - Prepare your workspace:
+    - Use Vagrant, see `README.vagrant.md`
+    - Locally
+      - Install [NodeJS](http://nodejs.org/), if you haven't already
+      - Run `npm install -g grunt-cli` (you might need sudo/admin for this)
+      - Run `npm install` from the directory to install the dependencies
+      - Run `node index.js` to run the tool
 
 
 ### Current Issues
 
-  - The internal JS object is reworked through `lib/EntityConverter.js` and do some normalization. The format is not final but gives a good headstart.
-  - Modeled after a first draft script in PHP Pages are crawled according to tags (CSS, HTML, HTML5, API and WebAPI at the moment). Tag feeds are limited to 500 results and don't seem to support pagination (see the [docs](https://developer.mozilla.org/en-US/docs/Project:MDN/Tools/Feeds) and [code](https://github.com/mozilla/kuma/blob/master/apps/wiki/feeds.py)), might need a better way to discover pages, current stats are:
-    - 1956 pages for those 5 tags (370 in HTML, 86 in HTML5)
-    - 1576 pages left after removing duplicates
-    - 846 pages have a compat section
-  - Also, some pages have compat tables but don't represent a tag or property directly, e.g. [HTML/CORS_Enabled_Image](https://developer.mozilla.org/en-US/docs/HTML/CORS_Enabled_Image)
+  - [ ] Need to improve page scraping, see #3
+  - [ ] Some pages have compat tables but don't represent a tag or property directly, e.g. [HTML/CORS_Enabled_Image](https://developer.mozilla.org/en-US/docs/HTML/CORS_Enabled_Image)
 
 
 ### Developing
