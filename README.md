@@ -2,8 +2,7 @@
 
 [![Dependency Status](https://david-dm.org/webplatform/mdn-compat-importer.png)](https://david-dm.org/webplatform/mdn-compat-importer)
 
-
-Reads MDN compatibility info and converts it from HTML to JSON.
+Reads MDN compatibility info from the site, and converts it from HTML to JSON.
 
 ***This tool isn't meant to be run as-is, it will exit with a warning by default!***
 
@@ -15,15 +14,16 @@ Reads MDN compatibility info and converts it from HTML to JSON.
   - Run `npm install` from the directory to install the dependencies
   - Run `node index.js` to run the tool
 
+
 ### Current Issues
 
-  - The internal JS object needs to be converted into something that represents the [Browser Compatibility Tables - Datamodel](http://www.ronaldmansveld.nl/webplatform/compat_tables_datamodel.html)
-  - `Converter#extract()` needs more work to handle complex compat tables, like the one from [`<input>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Input#Browser_compatibility) and probably more compat tables in general
-  - Modeled after the old script, pages are crawled according to tags (CSS, HTML, HTML5, API and WebAPI at the moment), but tag feeds are limited to 500 results and don't seem to support pagination (see the [docs](https://developer.mozilla.org/en-US/docs/Project:MDN/Tools/Feeds) and [code](https://github.com/mozilla/kuma/blob/master/apps/wiki/feeds.py)), might need a better way to discover pages, current stats are:
+  - The internal JS object is reworked through `lib/EntityConverter.js` and do some normalization. The format is not final but gives a good headstart.
+  - Modeled after a first draft script in PHP Pages are crawled according to tags (CSS, HTML, HTML5, API and WebAPI at the moment). Tag feeds are limited to 500 results and don't seem to support pagination (see the [docs](https://developer.mozilla.org/en-US/docs/Project:MDN/Tools/Feeds) and [code](https://github.com/mozilla/kuma/blob/master/apps/wiki/feeds.py)), might need a better way to discover pages, current stats are:
     - 1956 pages for those 5 tags (370 in HTML, 86 in HTML5)
     - 1576 pages left after removing duplicates
     - 846 pages have a compat section
   - Also, some pages have compat tables but don't represent a tag or property directly, e.g. [HTML/CORS_Enabled_Image](https://developer.mozilla.org/en-US/docs/HTML/CORS_Enabled_Image)
+
 
 ### Developing
 
@@ -31,9 +31,10 @@ A full cache is bundled, so no requests will be made to MDN. You can start worki
 
 To test single pages, uncomment the stuff around line 50 and line 66 in `index.js`.
 
+
 ### Internal Object
 
-Here are some examples of what the internal JS object looks like:
+Here are some examples of what the internal JS object looks like Before `Converter#extract()` pass through `EntityConverter#convert()`.
 
 #### [HTML/Element/header](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/header#Browser_compatibility) (simple table)
 
@@ -213,6 +214,95 @@ Here are some examples of what the internal JS object looks like:
            'IE Phone': { normal: '?' },
            'Opera Mobile': { normal: '?' },
            'Safari Mobile': { normal: '?' } } } } }
+```
+
+### After `EntityConverter#convert()` data cleanup
+
+After the data cleanup is finished, it currently gets transformed in the
+following format.
+
+Also, have a look at the source comments to see the list of [filters and modifications are applied](https://github.com/webplatform/mdn-compat-importer/blob/master/lib/EntityConverter.js#L9). See `Rd01` and other `RdNN` notes.
+
+```js
+[
+    {
+        "breadcrumb": [
+            "Web",
+            "CSS",
+            "image"
+        ],
+        "category": "css",
+        "contents": {
+            "desktop": {
+                "<gradient>": {
+                    "Chrome": { "?": "x" },
+                    "Firefox": { "?": "y u x",
+                        "notes": {
+                            "prefix": "limited to &"
+                        }
+                    },
+                    "Internet Explorer": { "?": "u x",
+                        "notes": {
+                            "prefix": "IE 10"
+                        }
+                    },
+                    "Opera": { "?": "x" },
+                    "Safari": { "?": "x" }
+                },
+                "<uri>": {
+                    "Chrome": { "?": "y" },
+                    "Firefox": { "?": "y" },
+                    "Internet Explorer": { "?": "y" },
+                    "Opera": { "?": "y" },
+                    "Safari": { "?": "y" }
+                },
+                "element()": {
+                    "Chrome": { "?": "u" },
+                    "Firefox": { "4.0": "x",
+                        "notes": {
+                            "prefix": "4.0 (2.0) limited to &"
+                        }
+                    },
+                    "Internet Explorer": { "?": "u" },
+                    "Opera": { "?": "u" },
+                    "Safari": { "?": "u" }
+                }
+            },
+            "mobile": {
+                "<gradient>": {
+                    "Android": { "?": "u" },
+                    "Firefox Mobile": { "?": "y u x",
+                        "notes": {
+                            "prefix": "limited to &"
+                        }
+                    },
+                    "IE Phone": { "?": "u" },
+                    "Opera Mobile": { "?": "u" },
+                    "Safari Mobile": { "?": "u" }
+                },
+                "<uri>": {
+                    "Android": { "?": "y" },
+                    "Firefox Mobile": { "?": "y" },
+                    "IE Phone": { "?": "y" },
+                    "Opera Mobile": { "?": "y" },
+                    "Safari Mobile": { "?": "y" }
+                },
+                "element()": {
+                    "Android": { "?": "u" },
+                    "Firefox Mobile": { "4.0": "x",
+                        "notes": {
+                            "prefix": "4.0 (2.0) limited to &"
+                        }
+                    },
+                    "IE Phone": { "?": "u" },
+                    "Opera Mobile": { "?": "u" },
+                    "Safari Mobile": { "?": "u" }
+                }
+            }
+        },
+        "origin": "https://developer.mozilla.org/en-US/docs/Web/CSS/image"
+    }
+]
 ```
 
 ---
