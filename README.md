@@ -21,8 +21,8 @@ Reads MDN compatibility info from the site, and converts it from HTML to JSON.
 
 ### Current Issues
 
-  - [ ] Need to improve page scraping, see #3
-  - [ ] Some pages have compat tables but don't represent a tag or property directly, e.g. [HTML/CORS_Enabled_Image](https://developer.mozilla.org/en-US/docs/HTML/CORS_Enabled_Image)
+  - Need to improve page scraping, see [#3](https://github.com/webplatform/mdn-compat-importer/issues/3)
+  - Some pages have compat tables but don't represent a tag or property directly, e.g. [HTML/CORS_Enabled_Image](https://developer.mozilla.org/en-US/docs/HTML/CORS_Enabled_Image)
 
 
 ### Developing
