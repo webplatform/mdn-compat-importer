@@ -98,12 +98,22 @@ Q.
   // transform to WPD format
   then(function(tableData) {
     //console.log(require('util').inspect(tables, { depth: 4 })); // uncomment to see the object, single page mode from above recommended
+    fs.writeFileSync('data/compat-mdn-raw.json', JSON.stringify(tableData, null, 4));
     return converter.convert(tableData);
   }).
 
   // save to disk
   then(function(wpd) {
+
+    // Append copy of caniuse.com user agent data,
+    // sorted by mobile, desktop
+    var fileAgents = 'data/agents.json';
+    if(fs.existsSync(fileAgents)) {
+      _.assign(wpd, {agents: JSON.parse(fs.readFileSync(fileAgents, {encoding:"utf8"}))});
+    }
+
     fs.writeFileSync('data/compat-mdn.json', JSON.stringify(wpd));
+    fs.writeFileSync('data/compat-mdn-pretty.json', JSON.stringify(wpd, null, 4));
     console.log('data saved');
   }).
 
