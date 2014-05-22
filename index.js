@@ -19,12 +19,40 @@ var reader = new Reader();
 var converter = new Converter();
 
 var tags = ['CSS', 'HTML', 'HTML5', 'API', 'WebAPI'];
+var listFiles = ['data/page-list.txt'];
 
 Q.
+  // this is the old "get a list of pages via feeds" method
+  /*
   // process each tag and wait for everything to finish
   all(tags.map(function(tag) {
     // get a promise for this tag
     return reader.processFeed(tag);
+  })).
+  */
+
+  // this is the new master list method
+  // get a list of pages from the file, ignoring comments (lines starting with '#')
+  all(listFiles.map(function(listFile) {
+    var deferred = Q.defer();
+
+    fs.readFile(listFile, { encoding: 'utf8' }, function(err, data) {
+      if (err) {
+        deferred.reject(err);
+        return;
+      }
+
+      var lines = data.split(/\r?\n/);
+      var urls = _.filter(lines, function(line) {
+        line = line.trim();
+        return line && line[0] !== '#';
+      });
+
+      reader.links = _.zipObject(urls);
+      deferred.resolve();
+    });
+
+    return deferred.promise;
   })).
 
   // find out how the compat section is named for each page
