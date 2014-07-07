@@ -103,8 +103,15 @@ Q.
 
   // save to disk
   then(function(wpd) {
-    fs.writeFileSync('data/compat-mdn.json', JSON.stringify(wpd));
+    fs.writeFileSync('data/data.json', JSON.stringify(wpd));
     console.log('data saved');
+    return wpd;
+  }).
+
+  // make human friendly
+  then(function(wpd) {
+    fs.writeFileSync('data/data-human.json', JSON.stringify(wpd, null, 2));
+    console.log('human data saved');
   }).
 
   // this will throw if something went wrong

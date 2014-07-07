@@ -6,6 +6,57 @@ Reads MDN compatibility info from the site, and converts it from HTML to JSON.
 
 ***This tool isn't meant to be run as-is, it will exit with a warning by default!***
 
+## Using data
+
+You can query the data using the terminal and `underscore-cli](https://github.com/ddopson/underscore-cli)`.
+
+    npm install -g underscore-cli
+
+How many features?
+
+    cat data/data.json | underscore select ':root > .slugs' | underscore process 'size(data[0])'
+    >> 1115
+
+Finding a feature?
+
+    cat data/data.json | underscore select ':root > .slugs' | underscore process 'indexOf(data[0], "before")'
+    >> 29
+    cat data/data.json | underscore select ':root > .data' | underscore process 'data[0][29]'
+    >> ... JSON object ...
+
+How many duplicates?
+
+  How many are more than two?
+
+      cat data/data.json | underscore select ':root > .slugs' | underscore process 'dups=[]; seen=[]; each(data[0], function(e) { if(_.contains(seen, e)){ dups.push(e); } seen.push(e);  }); uniq(dups).length'
+    >> 80
+
+  How many duplicates overall?
+
+      cat data/data.json | underscore select ':root > .slugs' | underscore process 'dups=[]; seen=[]; each(data[0], function(e) { if(_.contains(seen, e)){ dups.push(e); } seen.push(e);  }); dups.length'
+    >> 112
+
+
+      cat data/data.json | underscore select ':root > .slugs' | underscore process 'dups=[]; seen=[]; each(data[0], function(e, index) { if(_.contains(seen, e)){ dups.push({slug: e, index: index}); } seen.push(e);  }); dups.length'
+
+Which are duplicates?
+
+  This is a bit tricky but to see only the duplicates and their array index at the data level by doing this:
+
+      cat data/data.json | underscore select ':root > .slugs' | underscore process 'dups=[]; seen=[]; each(data[0], function(e, index) { if(_.contains(seen, e)){ dups.push({slug: e, index: index}); } seen.push(e);  }); dups'
+      >> [{slug: "a", index: 291}, /* ... */ ]
+
+  To list the dupliates of the same slug:
+
+      cat data/data.json | underscore select ':root > .slugs' | underscore process 'dups=[]; seen=[]; each(data[0], function(e, index) { if(_.contains(seen, e)){ dups.push({slug: e, index: index}); } seen.push(e);  }); _.where(dups, {slug: "a"})'
+      >> [{ "slug": "a", "index": 291 }, { "slug": "a", "index": 393 }]
+
+  To view the data of a known entity that has duplicates
+
+      cat data/data.json | underscore select ':root > .data' | underscore process '_.where(data[0], {slug: "a"})'
+
+## Running
+
 ### Installation
 
   - Clone this repository (you should fork first, if you want to contribute)

@@ -2192,7 +2192,7 @@ https://developer.mozilla.org/en-US/docs/Web/API/Coordinates.heading
 https://developer.mozilla.org/en-US/docs/Web/API/Coordinates.latitude
 https://developer.mozilla.org/en-US/docs/Web/API/Coordinates.longitude
 https://developer.mozilla.org/en-US/docs/Web/API/Coordinates.speed
-https://developer.mozilla.org/en-US/docs/Web/API/Geolocation
+#https://developer.mozilla.org/en-US/docs/Web/API/Geolocation                             # Deliberately removed because duplicated, see Web/API/NavigatorGeolocation
 https://developer.mozilla.org/en-US/docs/Web/API/Geolocation.clearWatch
 https://developer.mozilla.org/en-US/docs/Web/API/Geolocation.getCurrentPosition
 https://developer.mozilla.org/en-US/docs/Web/API/Geolocation.watchPosition
@@ -2207,7 +2207,7 @@ https://developer.mozilla.org/en-US/docs/Web/API/PositionOptions
 https://developer.mozilla.org/en-US/docs/Web/API/PositionOptions.enableHighAccuracy
 https://developer.mozilla.org/en-US/docs/Web/API/PositionOptions.maximumAge
 https://developer.mozilla.org/en-US/docs/Web/API/PositionOptions.timeout
-https://developer.mozilla.org/en-US/docs/Using_geolocation
+#https://developer.mozilla.org/en-US/docs/Using_geolocation                               # Deliberately removed because duplicated, see Web/API/NavigatorGeolocation
 # Navigator
 https://developer.mozilla.org/en-US/docs/Web/API/NavigatorGeolocation
 https://developer.mozilla.org/en-US/docs/Web/API/NavigatorGeolocation.geolocation
